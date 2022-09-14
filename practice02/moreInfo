@@ -1,0 +1,24 @@
+<li> -- list
+<ul> -- unordered list
+<ol> -- ordered list
+<div> -- division
+<img> -- image
+<p> -- paragraph
+<h> -- header
+Advanced xpath:
+is based on parent and child, sibling relationships
+identifying elements by following sibling
+//tagName[@attribute = 'attribute value']/following-sibling::tagName
+//input[@id = 'calFromDate']/following-sibling::img
+
+identifying elements by preceding sibling
+//tagName[@attribute = 'attribute value']/preceding-sibling::tagName
+//span[text() = '& Orders']/preceding-sibling::span
+identifying elements by its parent
+//tagName[@attribute ='attribute value']/parent::ParentTagName
+//span[text() = '& Orders']/parent::a
+
+identifying element by ancestor
+//input[@id ='email']/ancestor::form
+Identifying elements by its index
+(//img[@class = 'ui-datepicker-trigger'])[2]

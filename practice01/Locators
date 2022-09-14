@@ -17,3 +17,20 @@ Types of Xpath:
                      it starts with double forward slash(//)
 Syntax for relative xpath:
 //tagname[@attributes = 'attributes value']
+
+Identifying element by xpath and using test:
+//tagname[text() = 'text value']
+
+Contains: will identify an element with a partial attributes value
+//tagname[contains(@attribute, 'attributes value')]
+       //input[contains(@placeholder, 'Phone')]
+       //a[contains(text(), 'Forgot')]
+
+Starts with: will identify the element with starting partial value
+             //tagname[starts-with(@attribute, 'attributes value')]
+Exapmple:    //div[starts-with(@text(), 'R')]
+             //button[starts-with(@name, 'log')]
+
+Ends-with was used in xpath 1.0, we are using xpath 2.0 and this method id disabled
+
+
