@@ -21,9 +21,12 @@ public class CSSDemo {
         driver.findElement(By.cssSelector("a[id = 'ctl00_MainContent_btnCheckAll' ]")).click();
         Thread.sleep(2000);
         driver.findElement(By.cssSelector("input[src= 'App_Themes/Default/images/button_edit.gif' ]")).click();
+        driver.findElement(By.cssSelector("input[name= 'ctl00$MainContent$fmwOrder$TextBox5' ]")).clear();
+        Thread.sleep(3000);
         driver.findElement(By.cssSelector("input[name= 'ctl00$MainContent$fmwOrder$TextBox5' ]")).sendKeys("20155");
         Thread.sleep(2000);
         driver.findElement(By.cssSelector("a.btn_light")).click();
+        Thread.sleep(2000);
         driver.quit();
 
     }

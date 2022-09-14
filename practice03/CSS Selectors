@@ -23,5 +23,12 @@ starts-with method in css:
 Example: input[id ^= 'btnv']
 
 ends-with method in css:
-$ symbol represent ends0with method --- tagName[atrribute $= 'ending attribute value']
+$ symbol represent ends0with method --- tagName[attribute $= 'ending attribute value']
 Example: img[src $= 'syntax.png']
+
+consists of several methods where we can perform actions and get element state on the web page.
+isEnabled() -- boolean value
+isSelected() -- boolean value
+isDisplayed() -- boolean value
+clear() -- void
+getAttribute() -- string value
