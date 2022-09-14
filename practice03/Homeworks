@@ -1,0 +1,8 @@
+hw1:
+Amazon link count
+Open chrome browser
+go to "http://amazon.com/
+get all link
+get number of links that has text
+print the console only the links that has text
+
