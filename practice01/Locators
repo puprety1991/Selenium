@@ -1,0 +1,19 @@
+8 locators:
+--id
+-- name
+-- className
+-- linkText
+--partialLinkText
+--xpath
+--cssSelector
+--tagName
+
+Types of Xpath:
+1. Absolute xpath -- starts from the starting node in html
+                     it always starts with single forward slash(/)
+                     Example: /html/body/div/
+
+2. Relative xpath -- starts from nay node in the html
+                     it starts with double forward slash(//)
+Syntax for relative xpath:
+//tagname[@attributes = 'attributes value']
