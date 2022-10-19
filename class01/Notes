@@ -1,0 +1,38 @@
+1. What is Software Testing?
+    identify correctness and quality of the application
+2. Ways you can test an application?
+    a. Manual
+    b. Automation
+3. What's the need of automation testing?
+    Makes life easier
+    saves time
+4. What are the tools that you can use for Automation?
+    Selenium
+    Cucumber
+    TestNG
+    Katlon Studio
+    Uft
+5.Type of Testing?
+   Functional;
+   Non Functional
+6. What is Selenium?
+    Selenium is tool that help us to automate webApplication.
+    It is mainly used for Functional Testing.
+7.Components of Selenium
+    Selenium IDE
+    Selenium WebDrive
+    Selenium Grid
+    Selenium RC
+8. Wha is Selenium WebDriver?
+   It is a tool that allows us to perform actions on a webApplication.
+   It is an Interface
+9. Advantages:
+    Open Sources
+    It works with multiple languages
+    Works with multiple browsers
+    Os independent
+10. Disadvantages:
+    No technical support
+    Can not test Desktop Application
+    No built in reports
+    Can not test Captcha, images, Videos

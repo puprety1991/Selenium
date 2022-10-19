@@ -1,0 +1,3 @@
+handling checkBoxe and RadioButtons
+1. if you have only 1 checkbox or radioButton - just click on it
+2. If you have multiple - store in a list and loop through
