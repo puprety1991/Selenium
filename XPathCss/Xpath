@@ -46,17 +46,18 @@ Shortcuts for CSS:
         tagName#IdValue, input#twotabsearchtextbox
 
 contains() method in CSS:
-'*'symbol represents contains() method -- tagName[attribute *= 'containing attribute value']
+    '*'symbol represents contains() method -- tagName[attribute *= 'containing attribute value']
 Example: span[class *= 'form']
 
 starts-with method in CSS:
-'^' symbol represents starts-with method -- tagName[attribute ^= 'starting attribute value']
+    '^' symbol represents starts-with method -- tagName[attribute ^= 'starting attribute value']
 Example: input[id ^= 'btnv']
 
 ends-with method in CSS:
-'$' symbol represent ends0with method --- tagName[attribute $= 'ending attribute value']
+    '$' symbol represent ends0with method --- tagName[attribute $= 'ending attribute value']
 Example: img[src $= 'syntax.png']
 
+WebElement Command:
 consists of several methods where we can perform actions and get element state on the web page.
 isEnabled() -- boolean value
 isSelected() -- boolean value
