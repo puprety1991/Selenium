@@ -63,6 +63,7 @@ isEnabled() -- boolean value
 isSelected() -- boolean value
 isDisplayed() -- boolean value
 clear() -- void
-getAttribute() -- string value
+getText() -- String value
+getAttribute() -- String value
 
 
