@@ -23,7 +23,6 @@ public class GetAllLinksFromEbay {
             System.out.println(linkText+"   "+fullLink);
 
         }
-        driver.quit();
 
 
 

@@ -29,3 +29,4 @@ public class Task1 {
         driver.quit(); // will quit the whole browser
     }
 }
+

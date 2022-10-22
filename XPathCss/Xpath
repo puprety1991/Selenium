@@ -1,0 +1,67 @@
+Why do you think we need Xpath and Css?
+1. Developers may not provide all the locators in the html
+2. By using xpath and css we can identify elements with any given attributes
+What is Xpath?
+   Xpath is like a query language which helps us to identify elements on uniquely on the web page.
+Types of Xpath:
+1. Absolute xpath -->  Starts from the starting node in html
+                       It always starts with single forward slash (/)
+2. Relative xpath -->  Starts from any node in the html
+                       It starts with double forward slash (//)
+
+Syntax for relative xpath:
+    //tagName[@attribute = 'attribute value'] , eg: //input[@id='twotabsearchtextbox']
+Identifying element by xpath and using text:
+    //tagName[text() = 'text value], eg: //a[text()='Coupons']
+Contains: will identify an element with a partial attribute value
+    //tagName[contains(@attribute,'attribute value')], eg: //input[contains(@placeholder,'phone')],
+                                                          //a[contains(text(),'Forgot')]
+Starts With: will identify the element with starting partial value
+    //tagName[starts-with(@attribute,'attribute value')], eg: //input[starts-with(@placeholder,'P')]
+                                                              //div[starts-with(text(),'R')]
+Advanced xpath:
+is based on parent and child, sibling relationships
+identifying elements by following sibling
+    //tagName[@attribute = 'attribute value']/following-sibling::tagName //First tagName  from above tagName
+    //input[@id = 'calFromDate']/following-sibling::img
+
+identifying elements by preceding sibling
+    //tagName[@attribute = 'attribute value']/preceding-sibling::tagName
+    //span[text() = '& Orders']/preceding-sibling::span
+identifying elements by its parent
+    //tagName[@attribute ='attribute value']/parent::ParentTagName
+    //span[text() = '& Orders']/parent::a
+identifying element by ancestor
+    //input[@id ='email']/ancestor::form
+Identifying elements by its index
+    (//img[@class = 'ui-datepicker-trigger'])[2]
+========================================================================================================================
+CSS Selectors(Cascading Styling Sheet)
+    tagName[attribute = 'attribute value'], button[type='submit']
+Css does not give you an opportunity to identify an element by text.
+Shortcuts for CSS:
+    Shortcut for className: "." ---- className
+        tagName.classNameValue, input.nav-input
+    Shortcut for ID: "#" -- ID
+        tagName#IdValue, input#twotabsearchtextbox
+
+contains() method in CSS:
+'*'symbol represents contains() method -- tagName[attribute *= 'containing attribute value']
+Example: span[class *= 'form']
+
+starts-with method in CSS:
+'^' symbol represents starts-with method -- tagName[attribute ^= 'starting attribute value']
+Example: input[id ^= 'btnv']
+
+ends-with method in CSS:
+'$' symbol represent ends0with method --- tagName[attribute $= 'ending attribute value']
+Example: img[src $= 'syntax.png']
+
+consists of several methods where we can perform actions and get element state on the web page.
+isEnabled() -- boolean value
+isSelected() -- boolean value
+isDisplayed() -- boolean value
+clear() -- void
+getAttribute() -- string value
+
+
