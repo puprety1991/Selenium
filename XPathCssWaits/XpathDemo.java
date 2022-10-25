@@ -1,4 +1,4 @@
-package com.syntax.XPathCss;
+package com.syntax.XPathCssWaits;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

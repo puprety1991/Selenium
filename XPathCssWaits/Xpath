@@ -65,5 +65,11 @@ isDisplayed() -- boolean value
 clear() -- void
 getText() -- String value
 getAttribute() -- String value
+========================================================================================================================
+To handle JS alert we only have 4 methods available:
+1. accept()
+2. dismiss()
+3.getText()
+4. sendKeys()
 
 
