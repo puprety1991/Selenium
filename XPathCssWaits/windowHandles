@@ -1,0 +1,8 @@
+Handling multiple window
+In order to handle multiple windows we will be using:
+getWindowHandle()
+getWindowHandles()
+
+windowHandle:
+window handle is a unique ID the holds the address of the window or tab.
+it is a 40 alphanumeric character ID.

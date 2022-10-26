@@ -1,0 +1,23 @@
+All the webApplication are developed using html.
+
+HTML -->
+tags:<html></html>
+Some Common WebElements:
+1.
+2.Radio button
+3.CheckBoxes
+4.Calendars
+5.DropDown
+6.Tables
+
+Attributes:
+What ever we have inside the tag is called attributes.
+
+----------No Such Element Exception:----------
+Occurs when the Driver is unable to find the element on the page.
+1. the locator is wrong
+2. the element is not on that page.
+
+----------Duplicate Values of attributes----------
+driver is going to go in the DOM from top to button, the first tag with id box will be picked and
+keys will be sent to that.
