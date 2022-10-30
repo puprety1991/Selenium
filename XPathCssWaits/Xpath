@@ -73,3 +73,4 @@ To handle JS alert we only have 4 methods available:
 4. sendKeys()
 
 
+//a[text()='Alerts & Modals']

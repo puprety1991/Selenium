@@ -1,0 +1,17 @@
+Locators:
+Xpath:
+1.  Absolute
+2.  Relative
+
+Absolute Xpath:
+        Starts with starting node html and then you proceed in the hierarchy.
+Reason not used often:
+1. too long, complicated
+2. If there is any addition in the hierarchy there is a possibility that the path is not valid any more.
+
+Relative Xpath:
+Syntax:
+//tagName[@attribute='attribute value']
+get me the 'tagName' which has an 'attribute' whose value is 'attribute value'
+<input id ="box",class="white'>box</input>
+//input[@id='box']

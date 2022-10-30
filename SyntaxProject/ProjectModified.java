@@ -15,12 +15,13 @@ import java.util.concurrent.TimeUnit;
 
 public class ProjectModified {
     public static void main(String[] args) throws InterruptedException {
+        String toGoUrl="https://syntaxprojects.com/basic-select-dropdown-demo.php";
 
                          //SETUP ENVIRONMENT
 
         System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
         WebDriver driver = new ChromeDriver();
-        driver.get("https://syntaxprojects.com/basic-select-dropdown-demo.php");
+        driver.get(toGoUrl);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         WebDriverWait wait = new WebDriverWait(driver, 20);
@@ -129,7 +130,7 @@ public class ProjectModified {
 
         String winHandleBefore = driver.getWindowHandle();
 
-        /*
+
         driver.findElement(By.xpath("//a[@title='Follow @syntaxtech on Instagram']")).click();
         Thread.sleep(2000);
 
@@ -138,9 +139,8 @@ public class ProjectModified {
         }
 
         driver.manage().window().maximize();
-        Thread.sleep(3000);
         driver.findElement(By.xpath("//div[text()='Follow']")).click();
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         driver.findElement(By.name("username")).sendKeys(userName);
         driver.findElement(By.name("password")).sendKeys(passWord);
         driver.findElement(By.xpath("(//div[@class ='_ab8w  _ab94 _ab99 _ab9f _ab9m _ab9p  _abak _abb8 _abbq _abb- _abcm'])[1]")).click();
@@ -151,9 +151,9 @@ public class ProjectModified {
         Thread.sleep(1000);
         driver.switchTo().window(winHandleBefore);
 
-        */
 
-      /*  driver.findElement(By.xpath("//a[@title='Follow @syntaxtech on Facebook']")).click();
+
+       driver.findElement(By.xpath("//a[@title='Follow @syntaxtech on Facebook']")).click();
         for (String winHandle : driver.getWindowHandles()) {
             driver.switchTo().window(winHandle);
         }
@@ -202,7 +202,7 @@ public class ProjectModified {
         driver.close();
 
         driver.switchTo().window(winHandleBefore);
-*/
+
 
                                    // DATE PICKERS
 
@@ -353,13 +353,16 @@ public class ProjectModified {
         driver.findElement(By.xpath("//button[text()='Start Download']")).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='Close']")));
 
+        Thread.sleep(1000);
+
+
         WebElement isCloseButton=driver.findElement(By.xpath("//button[text()='Close']"));
         if(isCloseButton.isEnabled()){
             System.out.println("Close button is enabled.");
-            Thread.sleep(1000);
-            isCloseButton.click();
-        }
 
+            driver.findElement(By.xpath("//button[text()='Close']")).click();
+        }
+        Thread.sleep(1000);
 
         //TABLE
 
