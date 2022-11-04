@@ -14,7 +14,6 @@ public class relationalXpath {
         System.out.println(title);
         driver.findElement(By.name("login")).click();
 
-
         driver.findElement(By.xpath("//input[@name = 'ctl00$MainContent$username']")).sendKeys("Tester");
         driver.findElement(By.xpath("//input[@id = 'ctl00_MainContent_password']")).sendKeys("test");
         driver.findElement(By.xpath("//input[contains(@id, 'ctl00_MainContent_login_button')]")).click();
