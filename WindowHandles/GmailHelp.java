@@ -24,7 +24,8 @@ public class GmailHelp {
         String mainPage=driver.getWindowHandle();
         Set<String> windowHandles = driver.getWindowHandles();
         System.out.println(windowHandles.size());
-        for (String handle : windowHandles) {
+        for (Iterator<String> iterator = windowHandles.iterator(); iterator.hasNext(); ) {
+            String handle = iterator.next();
             if (!handle.equals(mainPage)) {
                 driver.switchTo().window(handle);
                 String title = driver.getTitle();

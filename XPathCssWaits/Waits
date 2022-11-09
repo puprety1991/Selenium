@@ -15,6 +15,8 @@ Your script will move on to the next action. It will be applied only for findEle
 Syntax: driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 Explicit waits or WebDriver wait:
+    WebDriverWait wait = new WebDriverWait(driver,20);
+    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("")));
 It is used to tell webDriver to wait for a certain or expected condition before throwing "ElementNotVisibleException".
 Explicit wait works with ExceptedConditional class waits until the condition is met or the given time is achieved.
 
