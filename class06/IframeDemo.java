@@ -21,7 +21,7 @@ public class IframeDemo {
         WebElement frame1 = driver.findElement(By.id("frame1"));
         driver.switchTo().frame(frame1);
         WebElement textBox = driver.findElement(By.xpath("(//input)[1]"));
-        textBox.sendKeys("Hello World");
+        textBox.sendKeys("Done");
 
         WebElement frame3 = driver.findElement(By.id("frame3"));
         driver.switchTo().frame(frame3);
