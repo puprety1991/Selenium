@@ -1,0 +1,34 @@
+-------------> WAITS <-------------
+ **> wait for WebElement to be found --> Implicit wait
+ **> implicit wait --> global
+
+ scenario:
+    webElement : </button id = "type">button</button>
+    appears in the DOM after 10 seconds
+
+-------------> EXPLICIT WAITS <-------------
+explicit wait are conditional wait
+it will wait till a certain condition is fulfilled or the timeout runs out
+
+Rough syntax:
+    wait.until.webElement to be displayed()
+
+Real syntax for explicit wait:
+
+1. define the wait: WebDriverWait wait = new WebDriverWait(driver,20)
+2. Condition: wait.until(ExpectedConditions.elementToBeVisible(By.xpath("")));
+
+-------------> FLUENT WAITS <-------------
+The fluent wait allows us to set the polling time for the particular webElement.
+
+
+-------------> REVISION <-------------
+1. waits
+    a. Implicit wait --> will wait until the webElement is found in the DOM
+    b. Explicit wait --> it is conditional wait --> e.g. element to be visible/clickable/selected
+    c. Fluent --> We can set polling time in such waits, what is pulling?--> frequency with which it checks the DOM for a webElement
+
+Explicit wait:
+    Approach:
+        a. to declare the webDriver wait and set a timeouts.
+        b. wait until your condition is met(for a particular webElement)
