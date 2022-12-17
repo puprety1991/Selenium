@@ -14,5 +14,6 @@ public class LaunchBrowser {
         driver.navigate().to("http://facebook.com");
         Thread.sleep(100);
         driver.quit();
+        System.out.println("hello world");
     }
 }
